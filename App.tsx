@@ -11,9 +11,11 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import Constants from 'expo-constants';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
+  console.log('System Fonts:', Constants.systemFonts);
 
   return (
     <SafeAreaProvider>

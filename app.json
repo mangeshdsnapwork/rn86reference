@@ -1,4 +1,19 @@
 {
   "name": "RN86Reference",
-  "displayName": "RN86Reference"
+  "displayName": "RN86Reference",
+  "expo": {
+    "name": "RN86Reference",
+    "slug": "rn86reference",
+    "extra": {
+      "eas": {
+        "projectId": "a9ef5157-b9c4-4473-ab5b-cc73fd2cfb1a"
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/a9ef5157-b9c4-4473-ab5b-cc73fd2cfb1a"
+    },
+    "android": {},
+    "ios": {}
+  }
 }
