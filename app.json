@@ -11,7 +11,9 @@
     },
     "runtimeVersion": "1.0.0",
     "updates": {
-      "url": "https://u.expo.dev/a9ef5157-b9c4-4473-ab5b-cc73fd2cfb1a"
+      "url": "https://u.expo.dev/a9ef5157-b9c4-4473-ab5b-cc73fd2cfb1a",
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
     },
     "android": {},
     "ios": {}
