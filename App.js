@@ -95,7 +95,7 @@ function App() {
       <ScrollView>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <Text>
-       OTA build working properly JS based expo OTA with core dep - SDK 29 / Target 35
+       EAS UPDATE OTA build working properly JS based expo OTA with core dep - SDK 29 / Target 35
         </Text>
       <Text>Adobe libs, coachmark - rn-fetch-blob, Other libraries, Async storage and Axios2.0, Redux with eas build, Navigation Working fine OTA Test 4 with core dep - SDK 29 / Target 35</Text>
       <Text>
