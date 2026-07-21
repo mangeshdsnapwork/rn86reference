@@ -63,7 +63,7 @@ function App() {
         } else {
           console.log("No update available");
         }
-      } catch (e: any) {
+      } catch (e) {
         console.log("===== OTA ERROR =====");
         console.log("OTA ERROR JSON:", JSON.stringify(e, null, 2));
         console.log("OTA ERROR:", e);
@@ -77,7 +77,7 @@ function App() {
 
           console.log("===== EXPO UPDATES NATIVE LOGS =====");
           console.log(JSON.stringify(logs, null, 2));
-        } catch (logError: any) {
+        } catch (logError) {
           console.log(
             "Failed to read Expo Updates logs:",
             JSON.stringify(logError, null, 2)
@@ -94,8 +94,9 @@ function App() {
       <SafeAreaView>
       <ScrollView>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Text>ui changes by eas update sixth ipsum dolor sit amet consectetur adipisicing elit. A voluptates maiores obcaecati magni dolores perspiciatis! Soluta at illum optio modi ut. Quod, autem. Illum non quasi libero eveniet repellendus praesentium animi iusto, quod nihil, cumque eaque aliquam eos suscipit error quo odio.</Text>
-      <Text>OTA changes by eas update sixth ipsum dolor sit amet consectetur adipisicing elit. A voluptates maiores obcaecati magni dolores perspiciatis! Soluta at illum optio modi ut. Quod, autem. Illum non quasi libero eveniet repellendus praesentium animi iusto, quod nihil, cumque eaque aliquam eos suscipit error quo odio.</Text>
+      <Text>
+       OTA build working properly JS based expo OTA with core dep - SDK 29 / Target 35
+        </Text>
       <Text>Adobe libs, coachmark - rn-fetch-blob, Other libraries, Async storage and Axios2.0, Redux with eas build, Navigation Working fine OTA Test 4 with core dep - SDK 29 / Target 35</Text>
       <Text>
         {"\n"}
