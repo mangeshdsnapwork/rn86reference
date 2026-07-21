@@ -96,7 +96,7 @@ function App() {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <Text>ui changes by eas update sixth ipsum dolor sit amet consectetur adipisicing elit. A voluptates maiores obcaecati magni dolores perspiciatis! Soluta at illum optio modi ut. Quod, autem. Illum non quasi libero eveniet repellendus praesentium animi iusto, quod nihil, cumque eaque aliquam eos suscipit error quo odio.</Text>
       <Text>OTA changes by eas update sixth ipsum dolor sit amet consectetur adipisicing elit. A voluptates maiores obcaecati magni dolores perspiciatis! Soluta at illum optio modi ut. Quod, autem. Illum non quasi libero eveniet repellendus praesentium animi iusto, quod nihil, cumque eaque aliquam eos suscipit error quo odio.</Text>
-      <Text>Adobe libs, coachmark - rn-fetch-blob, Other libraries, Async storage and Axios2.0, Redux with eas build, Navigation Working fine OTA Test 4 with core dep - SDK 29 / Target 35</Text>
+      <Text>reanimated, Worklet, i18next, Adobe libs, coachmark - rn-fetch-blob, Other libraries, Async storage and Axios2.0, Redux with eas build, Navigation Working fine OTA Test 4 with core dep - SDK 29 / Target 35</Text>
       <Text>
         {"\n"}
       </Text>
@@ -153,6 +153,19 @@ function App() {
         @adobe/react-native-aeptarget@7.0.0 \
         @adobe/react-native-aepuserprofile@7.0.0
       </Text>
+      <Text>
+        {"\n"}
+      </Text>
+      <Text>
+        With upgrade to react-native 0.86, we have upgraded the following libraries to latest versions:
+        i18next@26.3.6 \
+        react-i18next@17.0.10
+      </Text>
+      <Text>{"\n"}</Text>
+      <Text> 
+        With update to react-native 0.86, we have upgraded the following libraries to latest versions:
+        react-native-reanimated@4.4.0 {"\n"} react-native-worklets@0.9.x
+        </Text>
       <AppContent />
       </ScrollView>
       </SafeAreaView>
