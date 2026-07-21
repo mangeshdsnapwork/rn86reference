@@ -96,7 +96,7 @@ function App() {
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <Text>ui changes by eas update sixth ipsum dolor sit amet consectetur adipisicing elit. A voluptates maiores obcaecati magni dolores perspiciatis! Soluta at illum optio modi ut. Quod, autem. Illum non quasi libero eveniet repellendus praesentium animi iusto, quod nihil, cumque eaque aliquam eos suscipit error quo odio.</Text>
       <Text>OTA changes by eas update sixth ipsum dolor sit amet consectetur adipisicing elit. A voluptates maiores obcaecati magni dolores perspiciatis! Soluta at illum optio modi ut. Quod, autem. Illum non quasi libero eveniet repellendus praesentium animi iusto, quod nihil, cumque eaque aliquam eos suscipit error quo odio.</Text>
-      <Text>coachmark - rn-fetch-blob, Other libraries, Async storage and Axios2.0, Redux with eas build, Navigation Working fine OTA Test 4 with core dep - SDK 29 / Target 35</Text>
+      <Text>Adobe libs, coachmark - rn-fetch-blob, Other libraries, Async storage and Axios2.0, Redux with eas build, Navigation Working fine OTA Test 4 with core dep - SDK 29 / Target 35</Text>
       <Text>
         {"\n"}
       </Text>
@@ -144,6 +144,14 @@ function App() {
         react-native-share@12.2.1 \
         react-native-webview@13.16.0 \
         rn-fetch-blob@0.12.0
+      </Text>
+      <Text>
+        {"\n"}
+      </Text>
+      <Text>
+        @adobe/react-native-aepcore@7.0.0 \
+        @adobe/react-native-aeptarget@7.0.0 \
+        @adobe/react-native-aepuserprofile@7.0.0
       </Text>
       <AppContent />
       </ScrollView>
