@@ -1,0 +1,118 @@
+name: figma-ui-generator
+version: 5.9.0
+status: active
+category: ui-generation
+platforms:
+  - angular
+  - react
+  - react-native
+  - flutter
+  - ios
+  - android
+tags:
+  - figma
+  - ui-generation
+  - design-to-code
+  - angular-material
+  - tailwind-css
+  - swiftui
+  - uikit
+  - storyboard
+  - xib
+  - dart
+  - design-tokens
+  - responsive
+  - pixel-accurate
+owner: neeraj-tiwari-iOS
+contributors:
+  - sujata-bharti-android
+  - Nikhil-namdev-flutter
+  - Akshay Awtade-iOS
+changelog:
+  - version: 5.9.0
+    date: 2026-07-29
+    changes:
+      - Added Figma Component Properties Mapping rule; extracts and maps variant, boolean, text, and instance swap properties to platform-specific code props/arguments
+      - Added Figma Visual & Stroke Properties Compliance rule; enforces exact rendering of border styles, stroke colors, weights, alignments, corner radii, fills, shadows, and opacity
+      - Added Test Identifier Generation rule; generates a dedicated keys file instead of hardcoded strings
+      - Added rules for Alignment Management, Centered Divider, Reusable component extraction flow, and Figma UI alignment center bounds checking
+      - Added Icon/Asset Validation rule preventing hallucinated resource or icon names
+  - version: 5.8.0
+    date: 2026-05-18
+    changes:
+      - Consolidated 17 reference files into 10 generic-named guideline files; extracted all platform code templates into examples/platform-code-examples.md
+      - Restructured iOS examples under a single ## iOS section with SwiftUI / UIKit subsections
+  - version: 5.7.0
+    date: 2026-05-18
+    changes:
+      - Made SKILL.md fully platform-agnostic; all platform-specific content delegated to platform guideline files
+      - Added build validation rules for iOS, Flutter, and React Native; created quality-rules.md, fail-conditions.md, and validate-output.js
+  - version: 5.6.0
+    date: 2026-05-07
+    changes:
+      - Merged SwiftUI and UIKit iOS guidelines into a single ios-guideline.md with delivery mode detection
+      - Consolidated iOS rows in SKILL.md Step 4, Step 6, and Step 7
+  - version: 5.5.0
+    date: 2026-05-07
+    changes:
+      - Added iOS + UIKit (Storyboard / XIB / Programmatic) as a fully supported delivery target
+      - Created references/ios-uikit-guideline.md with 16 strict UIKit rules
+  - version: 5.4.0
+    date: 2026-05-06
+    changes:
+      - Closed four architecture-quality gaps diagnosed from real user feedback (common components not extracted, CSS dumped into component files, inconsistent class names, weak responsive)
+      - Angular - added Step 2.5 (Component Classification) with three-bucket model (Layout / Shared / Feature) and a common-component checklist (Header, Footer, BottomNav, Avatar, IconButton, ListItemRow, Card)
+      - Angular Step 3 - rewrote CSS organization rules with mandatory file split (_variables, _typography, _mixins, _material, _utilities, _reset) and the DRY-LIFT rule (any value in 2+ component files lifts to global)
+      - Angular - added RULE 21 (BEM class naming) banning generic names (wrapper, container, red, big, div-1) with grep-based verification
+      - Angular Step 8 - rewrote folder routing to use three buckets (src/app/layout, src/app/shared/components, src/app/features/{name}/components) with composition example
+      - Angular Step 10 - added per-pattern responsive table covering 11 patterns at 4 breakpoints, plus mandatory 44px touch-target rule at < 768px
+      - Angular Step 11 - added 4 new comparison rows (component extraction, CSS DRY, class naming, responsive 5-viewport audit) and 4 new sub-audit steps (11d-5a/b/c/d) with concrete grep-based verification
+      - React - mirrored all four dimensions: Step 8 three-bucket model, Step 10 per-pattern responsive table, CSS organization + DRY-LIFT, BEM class naming rule, and 5 new Step 11 comparison rows
+  - version: 5.3.0
+    date: 2026-05-05
+    changes:
+      - Closed two systemic visual-mismatch loopholes diagnosed from real user output (Material checkmark on selected tab, Material icon substitution for eye/more/QR)
+      - Angular Step 7 - added HARD BAN on Material icon substitution covering eye, more, QR, bell, search, send, plus
+      - Angular - added RULE 19 (Material Defaults Hit-list) covering 16 Material components with concrete remediation per default that bleeds through (mat-button-toggle checkmark via hideSingleSelectionIndicator, mat-tab-group indicator, ripples, default elevations, focus rings)
+      - Angular - added RULE 20 cross-referencing the icon-source ban
+      - Angular Step 11 - added 'Icon source' row, 'Extras audit' row, and 'Material defaults audit' row to the comparison table; verdict treats these as blocking
+      - React Step 7 - mirrored the hard ban for icon-library substitution (lucide-react, heroicons, react-icons, radix-ui icons, MUI icons)
+      - Updated Component Mapping icon row in Angular Step 1.5 to defer to Step 7 hard rule
+  - version: 5.2.0
+    date: 2026-05-05
+    changes:
+      - Aligned all guidelines with the official Figma MCP tool API (https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/)
+      - Replaced wrong tool name `mcp_figma-desktop_get_screenshot` with the official `get_screenshot` (SKILL.md, Angular, React)
+      - Added `get_variable_defs` as the primary source for design tokens in Angular Step 3 / Step 9 and React Step 7
+      - Added `get_metadata` guidance for handling large frames without context blowup
+      - Added a 'Companion MCP tools' subsection in Angular Step 1.5 and React Step 1.5
+      - Removed duplicate Component Mapping list from Angular Step 5 (it duplicated Step 1.5 verbatim)
+      - Deduplicated within-Step-1.5 Angular component mapping; replaced with a clean table
+      - Brought React guideline to parity with Angular fixes from v5.1.0 - promoted React Step 8-11 from h2 to h1, fixed `.github/skills/...` paths, added macOS/Linux command equivalents, aligned asset folder with SKILL.md (public/assets/figma)
+      - Added numbering note in React guideline explaining why Rules 1-2 are skipped (Angular Material-specific)
+  - version: 5.1.0
+    date: 2026-05-05
+    changes:
+      - Added missing Step 2 (UI Analysis) heading to Angular guideline
+      - Aligned Angular asset folder + naming with SKILL.md (src/assets/figma/<hash>)
+      - Aligned Angular report/screenshot path with SKILL.md (reports/...)
+      - Fixed Angular guideline self-contradiction in component output folder (Step 8 vs Step 12)
+      - Closed SKILL.md YAML frontmatter
+      - Synced version across SKILL.md, metadata.yaml, report-template.md
+      - Promoted Step 11 and Step 12 in Angular guideline from h2 to h1
+      - Added macOS/Linux command equivalents alongside PowerShell in Angular guideline
+      - Marked node scripts/generate-ui.js as optional fallback (MCP-based flow is primary)
+      - Uncommented flutter, ios platforms; added react-native
+  - version: 5.0.0
+    date: 2026-05-02
+    changes:
+      - Initial release of figma-to-component-mcp skill metadata
+      - Support for Angular + Angular Material, React + Tailwind CSS, Flutter + Dart, iOS + SwiftUI
+      - Evidence-based tech stack detection with no assumptions
+      - Design token extraction into framework-specific global token files
+      - Figma asset download to project-local paths via Figma Desktop MCP
+      - Mobile responsiveness validation across five breakpoints
+      - Screenshot comparison with 95%+ visual match enforcement
+      - Added flutter-dart-guideline.md and ios-swiftui-guideline.md references
+      - Added metadata.yaml for figma-to-component-mcp skill
+
